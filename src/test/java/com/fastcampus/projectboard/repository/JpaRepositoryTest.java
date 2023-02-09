@@ -12,7 +12,7 @@ import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-@DisplayName("JPA 연결 테스")
+@DisplayName("JPA 연결 테스트")
 @Import(JpaConfig.class)
 @DataJpaTest
 class JpaRepositoryTest {
