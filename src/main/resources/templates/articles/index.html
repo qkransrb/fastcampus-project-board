@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>게시판 페이지</title>
+</head>
+<body>
+    <header>
+        header
+        <hr>
+    </header>
+
+    <main>
+        <form action="" method="post">
+            <label for="search-type" hidden>유형</label>
+            <select name="search-type" id="search-type">
+                <option value="">제목</option>
+                <option value="">본문</option>
+                <option value="">아이디</option>
+                <option value="">닉네임</option>
+                <option value="">해시태그</option>
+            </select>
+
+            <label for="search-value" hidden>검색어</label>
+            <input type="search" name="search-value" id="search-value" placeholder="검색어...">
+            <button type="submit">검색</button>
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>제목</th>
+                    <th>해시태그</th>
+                    <th>작성자</th>
+                    <th>작성일</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>게시글 1</td>
+                    <td>#Java</td>
+                    <td>SYSTEM</td>
+                    <td>2023-01-01</td>
+                </tr>
+                <tr>
+                    <td>게시글 2</td>
+                    <td>#Spring</td>
+                    <td>SYSTEM</td>
+                    <td>2023-02-01</td>
+                </tr>
+                <tr>
+                    <td>게시글 3</td>
+                    <td>#JPA</td>
+                    <td>SYSTEM</td>
+                    <td>2023-03-01</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <nav>
+            <table>
+                <tr>
+                    <td>Previous</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>Next</td>
+                </tr>
+            </table>
+        </nav>
+    </main>
+
+    <footer>
+        <hr>
+        footer
+    </footer>
+</body>
+</html>
