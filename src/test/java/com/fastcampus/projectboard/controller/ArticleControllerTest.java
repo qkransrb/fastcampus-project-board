@@ -35,8 +35,7 @@ class ArticleControllerTest {
                 .andExpect(view().name("articles/index"))
                 .andExpect(model().attributeExists("articles"));
     }
-
-    @Disabled("컨트롤러 구현 필요")
+    
     @DisplayName("[View][GET] 게시글 상세 페이지")
     @Test
     void givenNothing_whenRequestingArticleView_thenReturnsArticleView() throws Exception {
